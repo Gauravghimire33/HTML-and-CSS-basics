@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Learning about tables</title>
+        <style>
+            tr:hover{
+                background-color: rgb(23, 226, 23);
+            }
+        </style>
     </head>
     <body>
         <h1 style="text-align: center;"> HTML Tables</h1>
@@ -68,6 +73,107 @@
                 <td> Saptakoshi English Boarding High School</td>
                 <td> BKVM College</td>
                 <td> Rajbiraj Public College</td>
+            </tr>
+        </table><br>
+        <h2>COLSPAN AND ROWSPAN</h2>
+        <h4>COLSPAN EXAMPLE</h4>
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align: center;">
+            <comment>EXAMPLE OF COLSPAN </comment>
+            <tr>
+                <th colspan="3">Name</th>
+                <th>Age</td>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Ram</td>
+                <td>Kumar</td>
+                <td>Yadav</td>
+                <td>20</td>
+                <td>Kathmandu</td>
+            </tr>
+            <tr>
+                <td>Shyam</td>
+                <td>Kumar</td>
+                <td>Dakait</td>
+                <td>34</td>
+                <td>Karanchi</td>
+            </tr>
+            <tr>
+                <td>Hari</td>
+                <td>Kumar</td>
+                <td>Falano</td>
+                <td>45</td>
+                <td>Madrid</td>
+            </tr>
+        </table><br>
+        <h4>ROWSPAN EXAMPLE</h4>    
+        <caption>EXAMPLE OF ROWSPAN</caption>
+        <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align: center;">
+            <tr>
+                <th>Name</th>
+                <td>Gaurav Ghimire</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Contact Numbers</th>
+                <td>98253672103</td>
+            </tr>
+            <tr>
+                <td>9764396915</td>
+            </tr>
+        </table><br>
+        <h2>HTML TABLE WITH COLORED COLUMNS USING COLGROUP AND COL ELEMENTS</h2>
+        <table style="width: 100%" border="1" cellpadding="10"; cellspacing="0">
+            <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            <col span="2" style="background-color: #EEAADB">
+            <col span="1" style="background-color: #27b7df">
+            <col span="1" style="background-color: #0befc1">
+            <col span="1" style="background-color: #dfd627">
+            </colgroup>
+            <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            </tr>
+            <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            </tr>
+            <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            </tr>
+            <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
             </tr>
         </table>
     </body>
