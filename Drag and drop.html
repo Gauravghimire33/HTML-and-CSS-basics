@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DRAG AND DROP</title>
+        <style>
+            #div1 {
+                width: 400px;
+                height: 150px;
+                padding: 10px;
+                border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> DRAG AND DROP TUTORIAL</h1>
+        <div id="div1" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)"></div><br><br>
+        <img id="img1" src="/images/logo1.gif" draggable="true" ondragstart="dragStartHandler(event)" height="69" width="69">
+           <script>
+            function dragStartHandler(ev){
+                ev.dataTransfer.setData("text", ev.target.id)
+            }
+            function dragOverHandler(ev){
+                ev.preventDefault();
+            }
+            function dropHandler(ev){
+                ev.preventDefault();
+                const data = ev.dataTransfer.getData("text")
+                ev.target.appendChild(document.getElementById(data))
+            }
+        </script>
+        <!-- <div id="dragBox" ondrop="dropHadler(event)" ondragover="dragOverHandler(event)"></div> -->
+    </body>
+</html>
