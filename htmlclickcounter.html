@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>localStorage</h1>
+
+        <button onclick="clickCounter()" type="button">Click me!</button>
+        <p id="clickcount"></p>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter will continue to count.</p>
+
+    <script>
+        function clickCounter() {
+        const z = document.getElementById("clickcount");
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            z.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+        } else {
+            z.innerHTML = "Sorry, no Web storage support!";
+        }
+    }
+</script>
+
+<h1>SessionStorage</h1>
+
+<button onclick="clickCounter1()" type="button">Click me!</button>
+<p id="result1"></p>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+
+<script>
+function clickCounter1() {
+  const a = document.getElementById("result1");
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    a.innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session!";
+  } else {
+    a.innerHTML = "Sorry, no Web storage support!";
+  }
+}
+</script>
+    </body>
+</html>
