@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Transition
+        </title>
+        <link rel="icon" href="/images/favicon.svg" type="image/svg">
+        <style>
+            div{
+                width: 100px;
+                height: 50px;
+                background-color: lightblue;
+                text-align: center;
+                margin: 0 auto;
+                /* transition: width 2s, font-size 2s, background-color 1s; */
+                 
+            }
+            .d1:hover{
+                background-color: Pink;
+                transition-duration: 2s;
+                width: 200px;
+                font-size: 33px;
+                transition-timing-function: ease-in-out;
+                transform: rotate(360deg);
+                transform-origin: 0% 100%;
+            }
+            .d2:hover{
+                background-color: beige;
+                transition-duration: 2s;
+                width: 200px;
+                font-size: 33px;
+                transition-timing-function: ease-in-out;
+                transform: rotate(360deg);
+                transform-origin: 100% 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            Ease-in
+        </div><br>
+        <div class="d2">
+            Ease-in-out
+        </div><br>
+        <div class="d3">
+            Transition Div
+        </div><br>
+        <div class="d4">
+            Transition Div
+        </div><br>
+    </body>
+</html>
