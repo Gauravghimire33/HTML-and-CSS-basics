@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>External CSS</title>
+        <style>
+            .one{
+                border-style: dashed;
+                border-width: 2px;
+            }
+            .one:hover{
+                border-color: red;
+                font-size: 40px;
+                transition: 1s;
+                color: blue;
+            }
+            .two{
+                border-style: solid;
+                border-width: 2px;
+            }
+            .three{
+                border-style: dotted;
+                border-width: 2px;
+            }
+            .four{
+                border-style: double;
+                border-width: 4px;
+            }
+            .five{
+                border-style: groove;
+                border-width: 8px 8px 8px 8px;
+            }
+            .six{
+                border-style: ridge;
+                border-width: 4px;
+            }
+            .two:hover, .three:hover, .four:hover, .five:hover, .six:hover{
+                border-color: green;
+                font-size: 40px;
+                transition: 1s;
+                color: orange;
+                border-width: 6px 6px 6px 6px;
+            }
+            p{
+                font-size: 30px;
+            }
+        </style>
+        <!-- <link rel="stylesheet" href="externalcss.css"> -->
+    </head>
+    <body>
+        <!-- <h1 hover="true">
+            This is an example of external CSS.
+        </h1><br><br> -->
+        <!-- <p hover="true">
+            This is a paragraph styled using external css.
+        </p> -->
+        <p class="one" hover="true">Some text.</p>
+        <p class="two" hover="true">Some text.</p>
+        <p class="three" hover="true">Some text.</p>
+        <p class="four" hover="true">Some text.</p>
+        <p class="five" hover="true">Some text.</p>
+        <p class="six" hover="true">Some text.</p>
+    </body>
+</html>
