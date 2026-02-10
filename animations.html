@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML ANIMATIONS</title>
+        <link rel="icon" href="/images/favicon.svg" type="image/svg">
+        <style>
+            /* div{
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                margin: 0 auto;
+                position: relative;
+                background-color: red;
+                animation-name: myAnimation;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            } */
+            /* #div1{animation-timing-function: linear; }
+            #div2{animation-timing-function: ease-in;}
+            #div3{animation-timing-function: ease-out;}
+            #div4{animation-timing-function: ease-in-out;}
+            #div5{animation-timing-function: ease;} */
+            /* @keyframes myAnimation{ */
+                /* from{background-color: red;}
+                to{background-color: green;} */
+                /* 0%{
+                    background-color: pink;
+                    transform: rotate(0deg);
+                    left: 0px; top:0px;
+                }
+                25%{
+                    background-color: orange;
+                    transform: rotate(450deg);
+                    left: 200px; top:0px;
+                }
+                50%{
+                    background-color: yellow;
+                    transform: rotate(900deg);
+                    left: 200px; top: 200px;
+                }
+                75%{
+                    background-color: lightblue;
+                    transform: rotate(630deg);
+                    left: 0px; top: 200px;
+                }
+                100%{
+                    background-color: pink;
+                    transform: rotate(720deg);
+                    left: 0px; top:0px;
+                } */
+                 /* from{
+                    left:0px;
+                 }to{
+                    left:300px;
+                 }
+            } */
+            div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes myAnimation {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+        </style>
+    </head>
+    <body>
+        <div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+    </body>
+</html>
